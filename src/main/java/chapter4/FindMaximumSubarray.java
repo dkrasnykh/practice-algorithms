@@ -1,5 +1,7 @@
 package chapter4;
 
+import java.util.Arrays;
+
 public class FindMaximumSubarray {
     public static int[] findMaxCrossingSubarray(int[] a, int low, int mid, int high) {
         int left_sum = -Integer.MAX_VALUE;
@@ -48,7 +50,10 @@ public class FindMaximumSubarray {
     }
 
     public static void main(String[] args) {
+        int[] a = {13, -3, -25, 20, -3, -16, -23, 18, 20, -7, 12, -5, -22, 15, -4, 7};
+        System.out.println(Arrays.toString(findMaximumSubarray(a, 0, a.length-1)));
 
-
+        int[] b = {-1, -3, -5, -7, -8, -13, -15};
+        System.out.println(Arrays.toString(findMaximumSubarray(b, 0, b.length-1)));
     }
 }

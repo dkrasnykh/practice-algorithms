@@ -30,11 +30,11 @@ public class Quicksort {
         return partition(a, p, r);
     }
 
-    public static void randomizedQuicksort(int[] a, int p, int r){
-        if(p<r){
+    public static void randomizedQuicksort(int[] a, int p, int r) {
+        if (p < r) {
             int q = randomizedPartition(a, p, r);
-            randomizedQuicksort(a, p, q-1);
-            randomizedQuicksort(a, q+1, r);
+            randomizedQuicksort(a, p, q - 1);
+            randomizedQuicksort(a, q + 1, r);
         }
     }
 
